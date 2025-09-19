@@ -1,0 +1,19 @@
+<app-header titulo="List - Sliding"></app-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-list>
+    <ion-item *ngFor="let user of usuarios | async" sliding>
+      <ion-label>
+        <h3>Joshua</h3>
+        <p>joshua@gmail.com</p>
+
+      </ion-label>
+
+      <ion-label slot="end" class="ion-text-end text-small">1283.12.31.23</ion-label>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
